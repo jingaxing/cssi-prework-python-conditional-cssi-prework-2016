@@ -1,11 +1,6 @@
 languages:
-  - HTML
-  - CSS
+  - Python
 tags:
-  - cssi
-  - html
-  - css
-  - git
-  - command line
+  - conditionals
 type:
   - reference notes
