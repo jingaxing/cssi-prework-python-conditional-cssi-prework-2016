@@ -12,9 +12,11 @@ The easiest way to follow along with these multi-line Python examples is by crea
 ```
 touch conditionals.py
 open conditionals.py -a "Atom"
+# write your code in conditionals.py and then run it with the python command below.
 python conditionals.py
 ```
-Alternatively, you can still use the Python console, but for multiline commands, you will need to use tab to indent where appropriate and press enter twice! In the example below you'd type the if statement and press `Enter`. Next, press `tab` to type the code block (in this case the `print` statement). After typing the code block, hit enter. Finally, you'll need to hit enter again after the second set of ellipses. All of this is to say that writing your python code in a text editor is a lot simpler!
+
+Alternatively, you can still use the Python console, but for multiline commands, you will need to use tab to indent where appropriate and press enter twice! In the example below you'd type the if statement and press `Enter`. Next, press `tab` to type the code block (in this case the `print` statement). After typing the code block, hit enter. Finally, you'll need to hit enter again after the second set of ellipses. All of this is to say that writing your *python code in a text editor is a lot simpler!*
 
 ```
 >>> number_of_lines = 2
@@ -30,10 +32,10 @@ if condition_1:
 ```
 
 Note the syntax here, the condition ends with a colon and the block of code is indented.
-Let's use an example where we ask the user for their favorite animal. In Python, this can be achieved using the `raw_input()` function.
+Let's use an example where we ask the user for their favorite animal. In Python, this can be achieved using the `raw_input()` function (Python 2) or the `input()` function (Python 3).
 
 ```
-yourAnimal = raw_input('What is your favorite animal?')
+yourAnimal = input('What is your favorite animal?')
 myAnimal = "dog"
 
 if yourAnimal == myAnimal:
@@ -75,8 +77,10 @@ else:
 An "else" clause will always follow an "if" clause, because "else" means "otherwise."
 
 ## Statements Using the Elif Clause
-Where JavaScript has "else if", Python has "elif". This allow multiple conditions to be checked. WHen a condition is met, the code block underneath it is executed and the conditional statement is exited.
+Where JavaScript has "else if" (and Ruby has "elsif"), Python has `elif`. This allows multiple conditions to be checked. When a condition is met, the code block underneath it is executed and we exit the conditional statement (we call this lazy evaluation).
 ```
+x = 25
+
 if x > 500:
   print "x is really big"
 elif x > 50:
@@ -85,10 +89,12 @@ elif x > 0:
   print "x is not very big!"
 else:
   print "x is negative"
+
+=> "x is sort of big"
 ```
 
 ## Conclusion
-Flow Control is an important part of any programming language and Python is no exception. As you practice writing conditional statements in Python, be careful about your syntax because syntax in each language is generally different. However, the general concepts are the same and you can use your insights from JavaScript conditional statements to help work though the next lab.
+Flow Control is an important part of any programming language and Python is no exception. As you practice writing conditional statements in Python, be careful with your syntax use - it's easy to get confused once you've seen a bunch of languages. However, the general concepts are the same and you can use your insights from JavaScript conditional statements to help work though the next lab.
 
 Some criteria to help decide which condition to use:
 + If - one condition, specifies what to do if condition is True
