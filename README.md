@@ -3,9 +3,9 @@
 Often, we only want code to be executed if a certain condition is met. Just like in JavaScript, we can use conditional statements to help control the flow of our program.
 
 ## Objectives:
-+ Understand Conditional Statement Syntax
-+ Understand When to Use Each Statement Type
-+ Evaluate Boolean Expressions
++ Write conditional statement syntax
++ Use each statement type in the appropriate context
++ Evaluate boolean expressions
 
 ##Multi-line Code in Python
 The easiest way to follow along with these multi-line Python examples is by creating a new .py file and running your script through the command line.
@@ -25,13 +25,13 @@ Alternatively, you can still use the Python console, but for multiline commands,
 ... 
 ```
 ## If Statements
-Conditional statements are a type of control flow: They can control which parts of code get executed, and which do not. The basic conditional statement is the if statement:
+Conditional statements are a type of control flow. They can control which parts of code get executed, and which do not. The basic conditional statement is the if statement:
 ```
 if condition_1:
     run this block of code
 ```
 
-Note the syntax here, the condition ends with a colon and the block of code is indented.
+Note the syntax here. The condition ends with a colon and the block of code is indented.
 Let's use an example where we ask the user for their favorite animal. In Python, this can be achieved using the `raw_input()` function (Python 2) or the `input()` function (Python 3).
 
 ```
